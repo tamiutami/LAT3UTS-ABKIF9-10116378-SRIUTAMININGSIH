@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <item android:title="Home">
+        <group android:checkableBehavior="single">
+            <menu>
+
+                <item
+                    android:checkable="true"
+                    android:id="@+id/nav_home"
+                    android:title="Homw"/>
+                <item
+                    android:checkable="true"
+                    android:id="@+id/nav_interest"
+                    android:title="Interest" />
+
+            </menu>
+        </group>
+    </item>
+
+    <item android:title="Daily Activity">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:checkable="true"
+                    android:id="@+id/nav_Daily"
+                    android:icon="@drawable/daily"
+                    android:title="Daily Activity" />
+
+                <item
+                    android:checkable="true"
+                    android:id="@+id/nav_friend"
+                    android:icon="@drawable/friend"
+                    android:title="Friend List" />
+            </group>
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:checkable="true"
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/gallery"
+            android:title="Gallery" />
+        <item
+            android:checkable="true"
+            android:id="@+id/nav_musicvideo"
+            android:icon="@drawable/music"
+            android:title="Music" />
+        <item
+            android:checkable="true"
+            android:id="@+id/profile"
+            android:icon="@drawable/profile"
+            android:title="Profile" />
+    </group>
+</menu>
+
